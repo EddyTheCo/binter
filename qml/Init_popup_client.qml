@@ -1,0 +1,83 @@
+
+import QtQuick 2.0
+import QtQuick.Controls
+import QtQuick.Layouts
+import binter 
+
+Popup {
+    id: popup
+
+    modal: true
+    focus: true
+    background:Rectangle
+    {
+        color:"#0f171e"
+        border.width: 2
+        border.color: "white"
+        radius:8
+    }
+    ColumnLayout
+    {
+        anchors.fill: parent
+
+        Logo
+        {
+            Layout.preferredHeight: 200
+            Layout.maximumHeight: 400
+            Layout.minimumHeight: 180
+            Layout.preferredWidth: 400
+            Layout.minimumWidth: 300
+            Layout.maximumWidth: 500
+            Layout.fillWidth: true
+            Layout.alignment: Qt.AlignTop
+            role_:"Client"
+        }
+
+        Rectangle
+        {
+            color:"transparent"
+            id:rect_
+            Layout.minimumHeight: 200
+            Layout.preferredWidth: 400
+            Layout.minimumWidth: 300
+            Layout.maximumWidth: 500
+            Layout.fillHeight:  true
+            Layout.fillWidth: true
+            Layout.alignment: Qt.AlignBottom
+
+            Text
+            {
+                id:notice_
+                anchors.top: rect_.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: "Set the server id to connect"
+                color:"white"
+                font.pointSize: 20
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+            TextEdit{
+                id: textEdit_
+                visible: true
+                width:notice_.width
+                anchors.top: notice_.bottom
+                anchors.horizontalCenter: notice_.horizontalCenter
+                color:"white"
+                text:"rms1..."
+                horizontalAlignment: Text.AlignHCenter
+                clip:true
+                onTextChanged: {
+                    Book_Client.server_id=textEdit_.text
+                }
+                 focus: true
+                 font.family: "Helvetica"
+                 font.pointSize: 20
+            }
+
+
+        }
+    }
+
+
+
+}
