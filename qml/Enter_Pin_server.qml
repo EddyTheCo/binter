@@ -10,7 +10,7 @@ ColumnLayout
     id: ep
     required property  StackView stack
 
-    spacing:5
+    spacing:2
     Rectangle
     {
         id:head
@@ -18,9 +18,9 @@ ColumnLayout
 
         Layout.preferredHeight: 100
         Layout.maximumHeight: 200
-        Layout.minimumHeight: 50
+        Layout.minimumHeight: 75
         Layout.fillHeight:  true
-        Layout.minimumWidth: 400
+        Layout.minimumWidth: 360
         Layout.maximumWidth: 600
         Layout.fillWidth: true
         Layout.alignment: Qt.AlignCenter
@@ -42,18 +42,17 @@ ColumnLayout
     {
         id:center_
         color:"#0f171e"
-        Layout.minimumWidth: 400
+        Layout.fillHeight:  true
+        Layout.minimumHeight: 400
+        Layout.minimumWidth: 360
         Layout.maximumWidth: 600
-        Layout.preferredHeight: 300
-        Layout.minimumHeight: 200
         Layout.fillWidth: true
-        Layout.fillHeight: true
         Layout.alignment: Qt.AlignCenter
 
         Pin_box
         {
-            width:center_.width*0.8
-            height:200
+            width:center_.width*0.7
+            height:width*0.6
             id:pin_box_
             anchors.centerIn: center_
             description:"Enter pin"
@@ -65,7 +64,7 @@ ColumnLayout
     {
         id:tail
         color:"#0f171e"
-        Layout.minimumWidth: 400
+        Layout.minimumWidth: 360
         Layout.maximumWidth: 600
         Layout.preferredHeight: 100
         Layout.maximumHeight: 200

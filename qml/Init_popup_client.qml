@@ -22,12 +22,12 @@ Popup {
 
         Logo
         {
-            Layout.preferredHeight: 200
-            Layout.maximumHeight: 400
-            Layout.minimumHeight: 180
-            Layout.preferredWidth: 400
+            Layout.preferredHeight: 150
+            Layout.maximumHeight: 200
+            Layout.minimumHeight: 50 
+            Layout.preferredWidth: 360 
             Layout.minimumWidth: 300
-            Layout.maximumWidth: 500
+            Layout.maximumWidth: 400
             Layout.fillWidth: true
             Layout.alignment: Qt.AlignTop
             role_:"Client"
@@ -37,10 +37,10 @@ Popup {
         {
             color:"transparent"
             id:rect_
-            Layout.minimumHeight: 200
-            Layout.preferredWidth: 400
+            Layout.minimumHeight: 100
+            Layout.preferredWidth: 360
             Layout.minimumWidth: 300
-            Layout.maximumWidth: 500
+            Layout.maximumWidth: 400
             Layout.fillHeight:  true
             Layout.fillWidth: true
             Layout.alignment: Qt.AlignBottom
@@ -52,7 +52,7 @@ Popup {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Set the server id to connect"
                 color:"white"
-                font.pointSize: 20
+                font.pointSize: 15 
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
             }

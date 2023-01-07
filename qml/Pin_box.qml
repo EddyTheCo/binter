@@ -23,7 +23,7 @@ Rectangle
         anchors.centerIn: parent
         horizontalAlignment: TextEdit.AlignHCenter
         font.letterSpacing :20
-        font.pointSize: 40
+        font.pointSize: 25
         color:"white"
         inputMask: "99999"
         text: "12345"

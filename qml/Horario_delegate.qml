@@ -48,11 +48,11 @@ spacing:4
     Rectangle
     {
 
-        Layout.preferredWidth: 200
+        Layout.preferredWidth: 150
         Layout.fillHeight: true
         Layout.fillWidth: true
         Layout.alignment: Qt.AlignHCenter
-        Layout.maximumWidth: 500
+        Layout.maximumWidth: 400
         border.color:'white'
         border.width: 1
         height:parent.height

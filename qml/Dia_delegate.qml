@@ -15,7 +15,7 @@ ColumnLayout
     {
 
         id:day_label
-        Layout.preferredHeight: 150
+        Layout.preferredHeight: 100
         Layout.minimumHeight:  50
         Layout.fillWidth: true
 
@@ -30,7 +30,7 @@ ColumnLayout
 
                 text: dia_delegate.day.toLocaleString(Qt.locale(),"ddd")
                 color:"white"
-                font.pointSize:50
+                font.pointSize:35
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 Layout.alignment: Qt.AlignCenter
@@ -39,7 +39,7 @@ ColumnLayout
             Text
             {
                 text: dia_delegate.day.toLocaleString(Qt.locale(),"dd/MM/yy")
-                font.pointSize:30
+                font.pointSize:25
                 color:"white"
                 Layout.minimumHeight:  25
                 Layout.minimumWidth:  25
@@ -63,11 +63,11 @@ ColumnLayout
 
         Layout.fillHeight: true
         Layout.preferredHeight: 500
-        Layout.minimumHeight:  300
+        Layout.minimumHeight:  400
         Layout.fillWidth: true
         Layout.alignment: Qt.AlignBottom
 
-        delegate_height:height/5
+        delegate_height:100
         can_book:dia_delegate.can_book
         horario_model: dia_delegate.hour_model
 

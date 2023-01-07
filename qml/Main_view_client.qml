@@ -15,9 +15,9 @@ ColumnLayout
         color:"#0f171e"
         Layout.preferredHeight: 100
         Layout.maximumHeight: 200
-        Layout.minimumHeight: 50
+        Layout.minimumHeight: 75
         Layout.fillHeight:  true
-        Layout.minimumWidth: 400
+        Layout.minimumWidth: 360
         Layout.maximumWidth: 600
         Layout.fillWidth: true
         Layout.alignment: Qt.AlignCenter
@@ -53,7 +53,7 @@ ColumnLayout
     {
         anchors.centerIn: Overlay.overlay
         visible:!Book_Client.conected
-        width: 400
+        width: 360
         height: 600
         closePolicy: Popup.NoAutoClose
 
@@ -67,7 +67,7 @@ ColumnLayout
 
         Layout.fillHeight:  true
         Layout.minimumHeight: 400
-        Layout.minimumWidth: 400
+        Layout.minimumWidth: 360
         Layout.maximumWidth: 600
         Layout.fillWidth: true
         Layout.alignment: Qt.AlignCenter
